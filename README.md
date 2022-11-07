@@ -34,3 +34,4 @@ The task isn't available anymore.
 
 
 ### Why we should not use a terminate event in this case?
+We still need to communicate the notification about project refusal.
