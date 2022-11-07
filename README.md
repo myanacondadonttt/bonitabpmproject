@@ -30,7 +30,6 @@ Source: https://documentation.bonitasoft.com/bonita/2022.2/process/diagram-tasks
 
 ### What happens if you try to realize the task Approve proposal after 15 seconds (suppose you define the timer with 15sec)?
 The task isn't available anymore.
-
 <img width="830" alt="image" src="https://user-images.githubusercontent.com/46463790/200435596-4f0d4e66-87d5-4368-8dc6-68fe3c1f232a.png">
 
 
