@@ -19,6 +19,9 @@ To be able to use them properly during the whole process lifecycle. :)
 
 
 ### Why do we use operations in Bonita BPM?
+Operations are used to instantiate case data objects, delete case data objects, or assign values to attributes of case data objects. One can also use an operation at a task to update the value of a search key.
+
+Source: https://documentation.bonitasoft.com/bonita/2022.2/process/operations
 
 ### Which are the human tasks that need a form? Why?
 
