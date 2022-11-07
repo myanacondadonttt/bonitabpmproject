@@ -24,6 +24,8 @@ Operations are used to instantiate case data objects, delete case data objects, 
 Source: https://documentation.bonitasoft.com/bonita/2022.2/process/operations
 
 ### Which are the human tasks that need a form? Why?
+A human task is carried out by a person using a form to enter data or to receive information. Forms are needed for human tasks to make controling and interacting with processes clearer in terms of UI.
+
 
 ### What happens if you try to realize the task Approve proposal after 15 seconds (suppose you define the timer with 15sec)?
 
