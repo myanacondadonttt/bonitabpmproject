@@ -6,8 +6,7 @@
   <artifactId>bonitabpmproject</artifactId>
   <version>0.0.1</version>
   <name>bonitabpmproject</name>
-  <description>Bonita BPM project for Process Engineering course at MoSiG M2 program implemented by Elizaveta Kulicheva and Tetiana Yakovenko.
-</description>
+  <description>Bonita BPM project for Process Engineering course at MoSiG M2 program implemented by Elizaveta Kulicheva and Tetiana Yakovenko.</description>
   <properties>
     <bonita.runtime.version>7.15.0</bonita.runtime.version>
     <maven-install-plugin.version>3.0.0-M1</maven-install-plugin.version>
@@ -93,6 +92,12 @@
     <dependency>
       <groupId>org.codehaus.groovy</groupId>
       <artifactId>groovy-servlet</artifactId>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.company.model.project</groupId>
+      <artifactId>bdm-client</artifactId>
+      <version>1.0.0</version>
       <scope>provided</scope>
     </dependency>
   </dependencies>
