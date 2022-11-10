@@ -78,7 +78,7 @@
           <formMapping xmi:type="process:FormMapping" xmi:id="_RR7CpGE4Ee2qr-fpqCX3-g">
             <targetForm xmi:type="expression:Expression" xmi:id="_Y8ajsGFKEe2qr-fpqCX3-g" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <filters xmi:type="process:ActorFilter" xmi:id="_zv4AIGE_Ee2qr-fpqCX3-g" documentation="Initiator assigns the task to the user who initiated the process. the one who approved the proposal." name="Project Initiator" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
+          <filters xmi:type="process:ActorFilter" xmi:id="_zv4AIGE_Ee2qr-fpqCX3-g" documentation="Initiator assigns the task to the user who initiated the process. The one who approved the proposal." name="Project Initiator" definitionId="bonita-actorfilter-initiator" definitionVersion="1.0">
             <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_zv8RkGE_Ee2qr-fpqCX3-g" definitionId="bonita-actorfilter-initiator" version="1.0">
               <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_zv84oGE_Ee2qr-fpqCX3-g" key="autoAssign">
                 <expression xmi:type="expression:Expression" xmi:id="_zv84oWE_Ee2qr-fpqCX3-g" name="true" content="true" returnType="java.lang.Boolean" returnTypeFixed="true"/>
