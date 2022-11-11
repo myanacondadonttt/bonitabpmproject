@@ -3,13 +3,13 @@ Bonita BPM project for Process Engineering course at MoSiG M2 program.
 
 ## Answers for the questions:
 
-### The model displays some errors. Do you know why?
+### Q_1 The model displays some errors. Do you know why?
 We are observing an error because the output transitions from a XOR gateway must be default or conditional. We haven't used the forks for gateway such as "Yes" or "No" anser after the XOR gateway. In order to fix this error we have to add the condition. To do so we had to click on the connection leaving the gateway and add the conditions accordingly.
 <img width="664" alt="image" src="https://user-images.githubusercontent.com/46463790/196209224-421a1455-58d1-4b18-90cf-52c0385f9e8c.png">
 
 Source : https://community.bonitasoft.com/questions-and-answers/xor-conditional-output-settings
 
-### Why do we define variables at the process level?
+### Q_2 Why do we define variables at the process level?
 A process variable is available throughout the life of a process. Process variables can be uses to store data for transition conditions, and identifiers for business data stored in an external database. They are typically items of data which affect the path of the process, or are used at several steps of the process, but which become redundant, once the process instance has completed.
 
 Source: https://documentation.bonitasoft.com/bonita/2022.2/data/specify-data-in-a-process-definition
@@ -18,20 +18,27 @@ To be able to use them properly during the whole process lifecycle. :)
 
 
 
-### Why do we use operations in Bonita BPM?
+### Q_3 Why do we use operations in Bonita BPM?
 Operations are used to instantiate case data objects, delete case data objects, or assign values to attributes of case data objects. One can also use an operation at a task to update the value of a search key.
 
 Source: https://documentation.bonitasoft.com/bonita/2022.2/process/operations
 
-### Which are the human tasks that need a form? Why?
+### Q_4 Which are the human tasks that need a form? Why?
 A human task is carried out by a person using a form to enter data or to receive information. Forms are needed for human tasks to make controling and interacting with processes clearer in terms of UI.
 
 Source: https://documentation.bonitasoft.com/bonita/2022.2/process/diagram-tasks#:~:text=A%20human%20task%20is%20carried,call%20activity%20calls%20a%20subprocess.
 
-### What happens if you try to realize the task Approve proposal after 15 seconds (suppose you define the timer with 15sec)?
+### Q_5 What happens if you try to realize the task Approve proposal after 15 seconds (suppose you define the timer with 15sec)?
 The task isn't available anymore.
 <img width="830" alt="image" src="https://user-images.githubusercontent.com/46463790/200435596-4f0d4e66-87d5-4368-8dc6-68fe3c1f232a.png">
 
 
-### Why we should not use a terminate event in this case?
+### Q_6 Why we should not use a terminate event in this case?sgr
 We still need to communicate the notification about project refusal.
+
+
+EXTENSION
+1) We renamed lanes and added two new ones in order to separate tasks more logically.
+2) A Project Subprocess was added.
+3) A connter to an oracle database was made in order to add new project data to the data warehouse. Though we do not have credentials that is why the error is displayed.
+4) Initiator assigns the task to the user who initiated the process, the one who approved the proposal.
