@@ -2,7 +2,7 @@
   "modelVersion" : "2.3",
   "id" : "InitForm",
   "name" : "InitForm",
-  "lastUpdate" : 1667860967955,
+  "lastUpdate" : 1668162694093,
   "rows" : [
     [
       {
@@ -37,7 +37,7 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 12,
+                  "md" : 10,
                   "sm" : 12,
                   "xs" : 12,
                   "lg" : 12
@@ -57,7 +57,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Init Project"
+                    "value" : "Welcome to project workbench!"
                   },
                   "alignment" : {
                     "type" : "constant",
@@ -76,6 +76,88 @@
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 9,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "srcType" : {
+                    "type" : "constant",
+                    "value" : "URL"
+                  },
+                  "url" : {
+                    "type" : "constant",
+                    "value" : "https://www.liquidplanner.com/wp-content/uploads/2019/04/HiRes-17.jpg"
+                  },
+                  "assetName" : {
+                    "type" : "constant"
+                  },
+                  "alt" : {
+                    "type" : "interpolation"
+                  }
+                },
+                "reference" : "48d54d0b-ec8a-492e-ab3d-cc8d493acd9f",
+                "hasValidationError" : false,
+                "id" : "pbImage"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Save draft"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "default"
+                  },
+                  "formInput" : {
+                    "type" : "variable",
+                    "value" : "formInput"
+                  }
+                },
+                "reference" : "42015793-aa61-47c7-b670-d5287802369f",
+                "hasValidationError" : false,
+                "id" : "pbSaveButton"
               }
             ],
             [
