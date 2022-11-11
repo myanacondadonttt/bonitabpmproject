@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:actormapping="http://www.bonitasoft.org/ns/actormapping/6.0" xmlns:configuration="http://www.bonitasoft.org/ns/studio/configuration" xmlns:connectorconfiguration="http://wwww.bonitasoft.org/model/connector/configuration" xmlns:decision="http://www.bonitasoft.org/ns/studio/process/decision" xmlns:definition="http://www.bonitasoft.org/ns/connector/definition/6.1" xmlns:expression="http://www.bonitasoft.org/ns/studio/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/studio/process" xsi:schemaLocation="http://www.bonitasoft.org/ns/studio/process/decision http://www.bonitasoft.org/ns/studio/process#//decision">
   <process:MainProcess xmi:id="_RR3_EGE4Ee2qr-fpqCX3-g" name="Project_Validation_Diagram_Kulicheva_Yakovenko_EXTENSION" version="4" bonitaModelVersion="7.12.0-004">
     <elements xmi:type="process:Pool" xmi:id="_RR50QGE4Ee2qr-fpqCX3-g" name="Project_Validation_Process_Kulicheva_Yakovenko" version="4">
       <elements xmi:type="process:Lane" xmi:id="_RR6bUGE4Ee2qr-fpqCX3-g" name="R &amp; D Employee " actor="_sMs54GFQEe2RL_9Dvm4x7g">
@@ -627,6 +627,69 @@
         <dynamicLabel xmi:type="expression:Expression" xmi:id="_u39w0GFREe2RL_9Dvm4x7g" name="" content="" returnTypeFixed="true"/>
         <dynamicDescription xmi:type="expression:Expression" xmi:id="_u377oGFREe2RL_9Dvm4x7g" name="" content="" returnTypeFixed="true"/>
         <stepSummary xmi:type="expression:Expression" xmi:id="_u39w0WFREe2RL_9Dvm4x7g" name="" content="" returnTypeFixed="true"/>
+        <connectors xmi:type="process:Connector" xmi:id="_lFS9QGGbEe2RL_9Dvm4x7g" name="Data Warehouse" definitionId="database-oracle10g" event="ON_ENTER" definitionVersion="1.0.0">
+          <configuration xmi:type="connectorconfiguration:ConnectorConfiguration" xmi:id="_lFWAkGGbEe2RL_9Dvm4x7g" definitionId="database-oracle10g" version="1.0.0" modelVersion="7.12.0-004">
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_lFWAkWGbEe2RL_9Dvm4x7g" key="driver">
+              <expression xmi:type="expression:Expression" xmi:id="_lFWAkmGbEe2RL_9Dvm4x7g" name="oracle.jdbc.driver.OracleDriver" content="oracle.jdbc.driver.OracleDriver" returnTypeFixed="true"/>
+            </parameters>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_lFWAk2GbEe2RL_9Dvm4x7g" key="url">
+              <expression xmi:type="expression:Expression" xmi:id="_lFWAlGGbEe2RL_9Dvm4x7g" name="jdbc:oracle:thin:@HOSTNAME:PORT:XE" content="jdbc:oracle:thin:@HOSTNAME:PORT:XE" returnTypeFixed="true"/>
+            </parameters>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_lFWAlWGbEe2RL_9Dvm4x7g" key="script">
+              <expression xmi:type="expression:Expression" xmi:id="_lFWAlmGbEe2RL_9Dvm4x7g" name="&lt;pattern-expression>" content="select *" type="TYPE_PATTERN" returnTypeFixed="true"/>
+            </parameters>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_lFWAl2GbEe2RL_9Dvm4x7g" key="username">
+              <expression xmi:type="expression:Expression" xmi:id="_lFWAmGGbEe2RL_9Dvm4x7g" content="" returnTypeFixed="true"/>
+            </parameters>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_lFWAmWGbEe2RL_9Dvm4x7g" key="password">
+              <expression xmi:type="expression:Expression" xmi:id="_lFWAmmGbEe2RL_9Dvm4x7g" content="" returnTypeFixed="true"/>
+            </parameters>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_lFWAm2GbEe2RL_9Dvm4x7g" key="separator">
+              <expression xmi:type="expression:Expression" xmi:id="_lFWAnGGbEe2RL_9Dvm4x7g" content="" returnTypeFixed="true"/>
+            </parameters>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_lFWAnWGbEe2RL_9Dvm4x7g" key="outputType">
+              <expression xmi:type="expression:Expression" xmi:id="_lFWAnmGbEe2RL_9Dvm4x7g" returnTypeFixed="true"/>
+            </parameters>
+            <parameters xmi:type="connectorconfiguration:ConnectorParameter" xmi:id="_lFWAn2GbEe2RL_9Dvm4x7g" key="wizardMode">
+              <expression xmi:type="expression:Expression" xmi:id="_lFWAoGGbEe2RL_9Dvm4x7g" name="true" content="false" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+            </parameters>
+          </configuration>
+          <outputs xmi:type="expression:Operation" xmi:id="_lFWAoWGbEe2RL_9Dvm4x7g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_lFWAomGbEe2RL_9Dvm4x7g"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_lFWAo2GbEe2RL_9Dvm4x7g" name="resultset" content="resultset" type="CONNECTOR_OUTPUT_TYPE" returnType="java.sql.ResultSet">
+              <referencedElements xmi:type="definition:Output" xmi:id="_lFWApGGbEe2RL_9Dvm4x7g" name="resultset" type="java.sql.ResultSet"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_lFWApWGbEe2RL_9Dvm4x7g" type="ASSIGNMENT"/>
+          </outputs>
+          <outputs xmi:type="expression:Operation" xmi:id="_lFWApmGbEe2RL_9Dvm4x7g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_lFWAp2GbEe2RL_9Dvm4x7g"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_lFWAqGGbEe2RL_9Dvm4x7g" name="singleResult" content="singleResult" type="CONNECTOR_OUTPUT_TYPE" returnType="java.lang.Object">
+              <referencedElements xmi:type="definition:Output" xmi:id="_lFWAqWGbEe2RL_9Dvm4x7g" name="singleResult" type="java.lang.Object"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_lFWAqmGbEe2RL_9Dvm4x7g" type="ASSIGNMENT"/>
+          </outputs>
+          <outputs xmi:type="expression:Operation" xmi:id="_lFWAq2GbEe2RL_9Dvm4x7g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_lFWArGGbEe2RL_9Dvm4x7g"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_lFWArWGbEe2RL_9Dvm4x7g" name="oneRowNColResult" content="oneRowNColResult" type="CONNECTOR_OUTPUT_TYPE" returnType="java.util.List">
+              <referencedElements xmi:type="definition:Output" xmi:id="_lFWArmGbEe2RL_9Dvm4x7g" name="oneRowNColResult" type="java.util.List"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_lFWAr2GbEe2RL_9Dvm4x7g" type="ASSIGNMENT"/>
+          </outputs>
+          <outputs xmi:type="expression:Operation" xmi:id="_lFWAsGGbEe2RL_9Dvm4x7g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_lFWAsWGbEe2RL_9Dvm4x7g"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_lFWAsmGbEe2RL_9Dvm4x7g" name="nRowOneColResult" content="nRowOneColResult" type="CONNECTOR_OUTPUT_TYPE" returnType="java.util.List">
+              <referencedElements xmi:type="definition:Output" xmi:id="_lFWAs2GbEe2RL_9Dvm4x7g" name="nRowOneColResult" type="java.util.List"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_lFWAtGGbEe2RL_9Dvm4x7g" type="ASSIGNMENT"/>
+          </outputs>
+          <outputs xmi:type="expression:Operation" xmi:id="_lFWAtWGbEe2RL_9Dvm4x7g">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_lFWAtmGbEe2RL_9Dvm4x7g"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_lFWAt2GbEe2RL_9Dvm4x7g" name="tableResult" content="tableResult" type="CONNECTOR_OUTPUT_TYPE" returnType="java.util.List">
+              <referencedElements xmi:type="definition:Output" xmi:id="_lFWAuGGbEe2RL_9Dvm4x7g" name="tableResult" type="java.util.List"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_lFWAuWGbEe2RL_9Dvm4x7g" type="ASSIGNMENT"/>
+          </outputs>
+        </connectors>
         <loopCondition xmi:type="expression:Expression" xmi:id="_u39w0mFREe2RL_9Dvm4x7g" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         <loopMaximum xmi:type="expression:Expression" xmi:id="_u3-X4GFREe2RL_9Dvm4x7g" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
         <cardinalityExpression xmi:type="expression:Expression" xmi:id="_u3-X4WFREe2RL_9Dvm4x7g" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
